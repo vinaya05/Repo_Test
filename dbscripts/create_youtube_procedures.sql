@@ -1,0 +1,3 @@
+source yt_procedures/populate_yt_reports_master_fact_from_yt_revenue_info_raw.sql
+source yt_procedures/populate_yt_reports_master_fact_from_yt_social_info_raw.sql
+

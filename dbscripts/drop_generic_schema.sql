@@ -1,0 +1,24 @@
+DROP PROCEDURE IF EXISTS populate_generic_master_fact_from_liverail;
+DROP PROCEDURE IF EXISTS populate_generic_master_fact_from_youtube;
+DROP PROCEDURE IF EXISTS populate_generic_master_fact_from_youtube_bulk;
+DROP PROCEDURE IF EXISTS populate_generic_master_fact_from_summary_views;
+DROP PROCEDURE IF EXISTS populate_generic_master_fact_from_summary_views_bulk;
+DROP PROCEDURE IF EXISTS populate_generic_master_fact_from_summary_plays;
+DROP PROCEDURE IF EXISTS populate_generic_master_fact_from_summary_plays_bulk;
+DROP PROCEDURE IF EXISTS populate_generic_master_fact;
+DROP PROCEDURE IF EXISTS populate_generic_master_fact_bulk;
+DROP PROCEDURE IF EXISTS populate_generic_account_daily_fact;
+DROP PROCEDURE IF EXISTS populate_generic_project_daily_fact;
+DROP PROCEDURE IF EXISTS populate_generic_video_daily_fact;
+DROP PROCEDURE IF EXISTS populate_generic_country_daily_fact;
+DROP PROCEDURE IF EXISTS populate_generic_device_daily_fact;
+DROP PROCEDURE IF EXISTS generic_etl;
+DROP PROCEDURE IF EXISTS generic_etl_bulk;
+
+DROP TABLE IF EXISTS `generic_master_fact`;
+DROP TABLE IF EXISTS `source_dimension`;
+DROP TABLE IF EXISTS `generic_account_daily_fact`;
+DROP TABLE IF EXISTS `generic_project_daily_fact`;
+DROP TABLE IF EXISTS `generic_video_daily_fact`;
+DROP TABLE IF EXISTS `generic_country_daily_fact`;
+DROP TABLE IF EXISTS `generic_device_daily_fact`;

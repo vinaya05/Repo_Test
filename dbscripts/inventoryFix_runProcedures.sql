@@ -1,0 +1,50 @@
+
+drop procedure IF EXISTS  populate_liverail_stage;
+drop procedure IF EXISTS populate_liverail_master_fact;
+drop procedure IF EXISTS populate_liverail_project_device_daily_fact;
+drop procedure IF EXISTS populate_liverail_device_daily_fact;
+drop procedure IF EXISTS populate_liverail_project_country_daily_fact;
+drop procedure IF EXISTS populate_liverail_country_daily_fact;
+drop procedure IF EXISTS populate_liverail_account_daily_fact;
+drop procedure IF EXISTS populate_liverail_project_daily_fact;
+drop procedure IF EXISTS populate_liverail_video_daily_fact;
+
+
+source procedures/populate_liverail_stage.sql
+source procedures/populate_liverail_master_fact.sql
+source procedures/populate_liverail_project_device_daily_fact.sql
+source procedures/populate_liverail_device_daily_fact.sql
+source procedures/populate_liverail_project_country_daily_fact.sql
+source procedures/populate_liverail_country_daily_fact.sql
+source procedures/populate_liverail_account_daily_fact.sql
+source procedures/populate_liverail_project_daily_fact.sql
+source procedures/populate_liverail_video_daily_fact.sql
+
+
+drop procedure IF EXISTS populate_generic_master_fact_from_liverail;
+drop procedure IF EXISTS populate_generic_master_fact_from_youtube;
+drop procedure IF EXISTS populate_generic_master_fact_from_youtube_bulk;
+drop procedure IF EXISTS populate_generic_master_fact_from_summary_views_bulk;
+drop procedure IF EXISTS populate_generic_master_fact_from_summary_plays_bulk;
+drop procedure IF EXISTS populate_generic_master_fact_from_summary_plays;
+drop procedure IF EXISTS populate_generic_master_fact_from_summary_views;
+drop procedure IF EXISTS populate_generic_account_daily_fact;
+drop procedure IF EXISTS populate_generic_project_daily_fact;
+drop procedure IF EXISTS populate_generic_video_daily_fact;
+drop procedure IF EXISTS populate_generic_country_daily_fact;
+drop procedure IF EXISTS populate_generic_device_daily_fact;
+
+
+source procedures/populate_generic_master_fact_from_liverail.sql;
+source procedures/populate_generic_master_fact_from_youtube.sql;
+source procedures/populate_generic_master_fact_from_youtube_bulk.sql;
+source procedures/populate_generic_master_fact_from_summary_views_bulk.sql;
+source procedures/populate_generic_master_fact_from_summary_plays_bulk.sql;
+source procedures/populate_generic_master_fact_from_summary_plays.sql;
+source procedures/populate_generic_master_fact_from_summary_views.sql;
+source procedures/populate_generic_account_daily_fact.sql;
+source procedures/populate_generic_project_daily_fact.sql;
+source procedures/populate_generic_video_daily_fact.sql;
+source procedures/populate_generic_country_daily_fact.sql;
+source procedures/populate_generic_device_daily_fact.sql;
+
